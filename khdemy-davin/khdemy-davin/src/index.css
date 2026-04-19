@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Kantumruy+Pro:wght@400;700&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary:     #2F327D;
+  --color-secondary:   #DB2C2C;
+  --color-accent:      #F59E0B;
+  --color-accent-blue: #0088FF;
+  --color-accent-pink: #FF1493;
+  --color-desc:        #696984;
+  --color-btn:         #F75F65;
+  --color-text:        #000000;
+  --color-text-light:  #FFFFFF;
+  --color-bg:          #FFFFFF;
+  --color-bg-soft:     #F5F5FC;
+
+  --font-inter:  "Inter", sans-serif;
+  --font-kantum: "Kantumruy Pro", sans-serif;
+}
+
+/* Light mode defaults */
+:root {
+  --bg:        #ffffff;
+  --bg-soft:   #f5f5fc;
+  --bg-card:   #ffffff;
+  --border:    #e8e8e8;
+  --text:      #111111;
+  --text-muted:#696984;
+}
+
+/* Dark mode overrides */
+:root.dark {
+  --bg:        #0f0f1a;
+  --bg-soft:   #1a1a2e;
+  --bg-card:   #1e1e30;
+  --border:    #2e2e45;
+  --text:      #f1f1f1;
+  --text-muted:#9b9baa;
+}
+
+* { font-family: "Inter", "Kantumruy Pro", sans-serif; }
+.font-inter    { font-family: "Inter", sans-serif; }
+.font-kantumruy{ font-family: "Kantumruy Pro", sans-serif; }
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
