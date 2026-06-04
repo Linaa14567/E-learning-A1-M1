@@ -1,0 +1,25 @@
+#spring:
+#  jpa:
+#    hibernate:
+#      ddl-auto: create-drop
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/db_elearning_a01_m1
+#    driver-class-name: org.postgresql.Driver
+#    username: postgres
+#    password: qwer
+#  application:
+#    name: elearning-m1
+
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db_elearning-m1
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: qwer
+  application:
+    name: elearning-m1
+
